@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp4.ContentPageDemo"
+             Title="ContentPageDemo">
+    <VerticalStackLayout BackgroundColor="red">
+        <Label 
+            Text="this is content page"
+            TextColor="Black"
+            HorizontalTextAlignment="Center"
+            FontSize="32"
+            VerticalOptions="End" 
+            HorizontalOptions="Center" />
+        <Label Text="จีรภัทร รุจิรานุพงศ์ 6623765267" 
+               FontSize="25" 
+               HorizontalTextAlignment="Center"
+               TextColor ="Black">
+        </Label>
+               
+    </VerticalStackLayout>
+</ContentPage>

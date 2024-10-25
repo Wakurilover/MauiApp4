@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp4.CalculatorApp"
+             BackgroundColor="White">
+
+    <VerticalStackLayout Padding="20" Spacing="10">
+
+        <!-- หน้าจอแสดงผล -->
+        <Label x:Name="Display"
+               Text="Kantanop Jongjam"
+               FontSize="50"
+               HorizontalTextAlignment="End"
+               VerticalOptions="CenterAndExpand"
+               BackgroundColor="White"
+               TextColor="Black"
+               Padding="10"/>
+
+
+        <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Row 1: Buttons 7, 8, 9, / -->
+            <Button Text="7" Grid.Row="1" Grid.Column="0" FontSize="24" BackgroundColor="yellow" />
+            <Button Text="8" Grid.Row="1" Grid.Column="1" FontSize="24" BackgroundColor="yellow" />
+            <Button Text="9" Grid.Row="1" Grid.Column="2" FontSize="24" BackgroundColor="yellow" />
+            <Button Text="/" Grid.Row="1" Grid.Column="3" FontSize="24" BackgroundColor="LightGray" />
+
+            <!-- Row 2: Buttons 4, 5, 6, * -->
+            <Button Text="4" Grid.Row="2" Grid.Column="0" FontSize="24" BackgroundColor="yellow"/>
+            <Button Text="5" Grid.Row="2" Grid.Column="1" FontSize="24" BackgroundColor="yellow"/>
+            <Button Text="6" Grid.Row="2" Grid.Column="2" FontSize="24" BackgroundColor="yellow"/>
+            <Button Text="*" Grid.Row="2" Grid.Column="3" FontSize="24" BackgroundColor="LightGray" />
+
+            <!-- Row 3: Buttons 1, 2, 3, - -->
+            <Button Text="1" Grid.Row="3" Grid.Column="0" FontSize="24" BackgroundColor="yellow"/>
+            <Button Text="2" Grid.Row="3" Grid.Column="1" FontSize="24" BackgroundColor="yellow"/>
+            <Button Text="3" Grid.Row="3" Grid.Column="2" FontSize="24" BackgroundColor="yellow"/>
+            <Button Text="-" Grid.Row="3" Grid.Column="3" FontSize="24" BackgroundColor="LightGray" />
+
+            <!-- Row 4: Buttons 0, ., +, = -->
+            <Button Text="0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" FontSize="24" BackgroundColor="yellow"/>
+            <Button Text="." Grid.Row="4" Grid.Column="2" FontSize="24" BackgroundColor="yellow"/>
+            <Button Text="+" Grid.Row="4" Grid.Column="3" FontSize="24" BackgroundColor="LightGray" />
+
+            <Button Text="=" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" FontSize="24"/>
+
+        </Grid>
+    </VerticalStackLayout>
+
+
+</ContentPage>

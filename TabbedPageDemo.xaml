@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="MauiApp4.TabbedPageDemo"
+            Title="TabbedPageDemo"
+            BackgroundColor="Aqua"
+            BarBackgroundColor="White"
+            BarTextColor="red"
+            SelectedTabColor="DarkRed"
+            UnselectedTabColor="DarkKhaki">
+    <ContentPage Title="TAB 1"  >
+        <Label Text="จีรภัทร รุจิรานุพงศ์ 6623765267"
+               TextColor="Black"
+               FontSize="32"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center">
+        </Label>
+    </ContentPage>
+    <ContentPage Title="TAB 2" >
+        <Label Text="0"
+               BackgroundColor="LightGreen"
+               FontSize="32"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center">
+        </Label>
+    </ContentPage>
+    <ContentPage Title="TAB 3" >
+        <Label Text="Tab 3 Content"
+               FontSize="32"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center">
+        </Label>
+    </ContentPage>
+</TabbedPage>

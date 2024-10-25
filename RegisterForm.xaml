@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp4.RegisterForm"
+             Title="Register Form">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="RegisterForm"
+              TextColor="White"
+              FontSize="32"           
+              HorizontalTextAlignment="Center"
+              VerticalTextAlignment="Center">
+            </Label>
+
+            <!-- ชื่อ -->
+            <Label Text="Name" FontSize="Micro"/>
+            <Entry x:Name="NameEntry" Placeholder="Enter your name" />
+
+            <!-- เมล -->
+            <Label Text="Email" FontSize="Micro"/>
+            <Entry x:Name="EmailEntry" Placeholder="Enter your email" Keyboard="Email" />
+
+            <!-- วดป -->
+            <Label Text="Date of Birth" FontSize="Micro"/>
+            <DatePicker x:Name="DobPicker" />
+
+            <!-- Gender Selection -->
+            <Label Text="Gender" FontSize="Micro"/>
+            <StackLayout Orientation="Horizontal" Spacing="20">
+                <RadioButton x:Name="MaleRadioButton" Content="Male" />
+                <RadioButton x:Name="FemaleRadioButton" Content="Female" />
+            </StackLayout>
+
+            <!-- Agree to Terms -->
+            <Label Text="Agree to Terms and Conditions" FontSize="Micro"/>
+            <Switch x:Name="TermsSwitch"/>
+
+            <!-- Experience Slider -->
+            <Label Text="Experience(Years)" FontSize="Micro"/>
+            <Slider x:Name="ExperienceSlider" Minimum="0" Maximum="50" Value="0" />
+
+            <!-- Experience Value Display -->
+            <Label x:Name="ExperienceLabel" Text="0 years" FontSize="Micro"/>
+
+            <!-- Number of Dependents -->
+            <Label Text="Number of Dependents" FontSize="Micro"/>
+            <Stepper x:Name="DependentsStepper" Minimum="0" Maximum="10" Increment="1" />
+
+            <!-- Dependents Value Display -->
+            <Label x:Name="DependentsLabel" Text="0" FontSize="Micro"/>
+
+            <!-- Register Button -->
+            <Button Text="Register" Clicked="OnRegisterButtonClicked" BackgroundColor="Purple" TextColor="White"/>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="MauiApp4.FlyoutPageDemo"
+            Title="FlyoutPageDemo">
+    <FlyoutPage.FlyoutLayoutBehavior>Default</FlyoutPage.FlyoutLayoutBehavior>
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Flyout"
+                     BackgroundColor="#333333">
+            <Label Text="จีรภัทร รุจิรานุพงศ์ 6623765267"
+                   TextColor="White"
+                   FontSize="32"
+                   VerticalTextAlignment="Center"/>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <ContentPage Title="Flyout Detail"
+                     BackgroundColor="white">
+            <VerticalStackLayout BackgroundColor="Black">
+
+                <Label Text="flyout"
+                       TextColor="LightGreen"
+                       FontSize="32"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"/>
+            </VerticalStackLayout>
+        </ContentPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>
